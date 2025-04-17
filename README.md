@@ -1,0 +1,1 @@
+A simple social network desktop application that allows users to log in, manage editable profiles, add friends, and exchange messages in real time. The app includes a friend request system, a chat feature, and supports admin login with additional privileges.
