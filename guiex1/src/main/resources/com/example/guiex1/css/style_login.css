@@ -1,0 +1,37 @@
+/* 🌙 Fundal general și font */
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* 🏷️ Labeluri */
+.label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-weight: bold;
+}
+
+/* 📝 TextField & PasswordField */
+.text-field,
+.password-field {
+    -fx-background-color: #2e2e2e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6 8 6 8;
+}
+
+/* 🔘 Butoane */
+.button {
+    -fx-background-color: #3f51b5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #5c6bc0;
+}

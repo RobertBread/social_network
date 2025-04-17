@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@/com/example/guiex1/css/style_email.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.EmailController">
+   <children>
+      <TableView fx:id="tableFriends" layoutX="31.0" layoutY="27.0" prefHeight="260.0" prefWidth="275.0">
+        <columns>
+          <TableColumn fx:id="columnFirstName1" prefWidth="127.20001220703125" text="First Name" />
+          <TableColumn fx:id="columnLastName1" prefWidth="146.40001220703124" text="Last Name" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableRecipients" layoutX="306.0" layoutY="27.0" prefHeight="260.0" prefWidth="264.0">
+        <columns>
+          <TableColumn fx:id="columnFirstName2" prefWidth="142.4000244140625" text="First Name" />
+          <TableColumn fx:id="columnLastName2" prefWidth="120.79998779296875" text="Last Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="141.0" layoutY="6.0" text="Prieteni">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="410.0" layoutY="6.0" text="Send to">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMessage" layoutX="31.0" layoutY="306.0" prefHeight="66.0" prefWidth="390.0" />
+      <Button layoutX="432.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="66.0" prefWidth="138.0" text="Send">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

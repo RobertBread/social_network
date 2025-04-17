@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane stylesheets="@/com/example/guiex1/css/style_friend.css" prefHeight="576.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.FriendController">
+    <children>
+        <TableView fx:id="tableView" layoutX="30.0" layoutY="68.0" prefHeight="318.0" prefWidth="770.0">
+            <columns>
+                <TableColumn fx:id="LastName" prefWidth="375.0" text="Last Name" />
+                <TableColumn fx:id="FirstName" prefWidth="393.0" text="First Name" />
+            </columns>
+        </TableView>
+        <ButtonBar layoutX="28.0" layoutY="522.0" prefHeight="40.0" prefWidth="770.0">
+            <buttons>
+                <Button mnemonicParsing="false" onAction="#handleRequest" prefHeight="44.0" prefWidth="136.0" text="Friend Requests">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button minWidth="0.0" mnemonicParsing="false" onAction="#handleRemove" prefHeight="60.0" prefWidth="218.0" text="Remove Friend">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#handleAdd" prefHeight="56.0" text="Add Friend">
+                    <font>
+                        <Font size="16.0" />
+                    </font></Button>
+            <Button mnemonicParsing="false" onAction="#handleOpenChat" prefHeight="38.0" text="Open Chat">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleEmail" prefHeight="37.0" text="Send Email">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            </buttons>
+        </ButtonBar>
+      <Label fx:id="labelNume" layoutX="218.0" layoutY="5.0" prefHeight="58.0" prefWidth="378.0" textAlignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonPrevious" layoutX="30.0" layoutY="400.0" mnemonicParsing="false" onAction="#handlePrevious" text="Previous" />
+      <Button fx:id="buttonNext" layoutX="749.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleNext" text="Next" />
+      <Label fx:id="labelPage" layoutX="361.0" layoutY="400.0" text="Page 1 of ceva">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboPage" layoutX="30.0" layoutY="440.0" prefWidth="150.0" promptText="Prieteni pe pagina" />
+      <Button layoutX="655.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleOpenProfile" prefHeight="38.0" prefWidth="142.0" text="Open Profile" />
+      <Button layoutX="503.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleUploadPfp" prefHeight="38.0" prefWidth="142.0" text="Change pfp" />
+      <Button layoutX="351.0" layoutY="473.0" mnemonicParsing="false" onAction="#handleOpenMyProfile" prefHeight="38.0" prefWidth="142.0" text="Open my profile" />
+    </children>
+</AnchorPane>

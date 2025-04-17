@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane stylesheets="@/com/example/guiex1/css/style_login.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.LoginController">
+   <children>
+      <Label layoutX="140.0" layoutY="132.0" text="Password" />
+      <Button layoutX="190.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+      <Button layoutX="249.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleRegister" text="Register" />
+      <Button layoutX="324.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleChange" text="Change" />
+      <Label layoutX="137.0" layoutY="94.0" text="Last Name" />
+      <Label layoutX="136.0" layoutY="59.0" text="First Name" />
+      <TextField fx:id="txtFirstName" layoutX="227.0" layoutY="55.0" />
+      <TextField fx:id="txtLastName" layoutX="226.0" layoutY="90.0" />
+      <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="128.0" />
+   </children>
+</AnchorPane>

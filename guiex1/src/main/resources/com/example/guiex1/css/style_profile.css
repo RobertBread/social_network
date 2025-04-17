@@ -1,0 +1,33 @@
+/* 🌙 Fundal general */
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* 🏷️ Labeluri (nume, prieteni etc.) */
+.label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-weight: bold;
+}
+
+/* 🔘 Buton Remove */
+.button {
+    -fx-background-color: #b71c1c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #d32f2f;
+}
+
+/* 🖼️ Imagine (opțional, fără efecte suplimentare) */
+.image-view {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+    -fx-border-color: #555;
+    -fx-border-radius: 5;
+}

@@ -1,0 +1,73 @@
+/* 🌙 Fundal general */
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+}
+
+/* 🏷️ Labeluri */
+.label {
+    -fx-text-fill: #e0e0e0;
+    -fx-font-weight: bold;
+}
+
+/* ✍️ TextField (First Name, Last Name) */
+.text-field {
+    -fx-background-color: #2e2e2e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6 8 6 8;
+}
+
+/* 🔘 Buton */
+.button {
+    -fx-background-color: #3f51b5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #5c6bc0;
+}
+
+/* 🗂️ TableView fundal + text */
+.table-view {
+    -fx-background-color: #2b2b2b;
+    -fx-table-cell-border-color: transparent;
+    -fx-control-inner-background: #2b2b2b;
+    -fx-border-color: #444;
+    -fx-border-width: 1;
+    -fx-text-fill: #ffffff;
+}
+
+/* ✅ Celule cu text alb */
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+/* 🧾 Header tabel – DARK MODE complet */
+.table-view .column-header-background {
+    -fx-background-color: #333333;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: #333333;
+    -fx-text-fill: #f1f1f1;
+    -fx-font-weight: bold;
+    -fx-border-color: #444;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* 🔵 Rând selectat & hover */
+.table-view .table-row-cell:filled:hover {
+    -fx-background-color: #444;
+}
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #5c6bc0;
+    -fx-text-fill: white;
+}

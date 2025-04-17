@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane stylesheets="@/com/example/guiex1/css/style_profile.css" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.ProfileController">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="46.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelNume" layoutX="118.0" layoutY="31.0" text="Nume" />
+      <Label layoutX="281.0" layoutY="72.0" text="Number of friends:" />
+      <Label fx:id="labelFriends" layoutX="412.0" layoutY="72.0" text="nrPrieteni" />
+      <Button fx:id="buttonRemove" layoutX="281.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleRemove" prefHeight="26.0" prefWidth="180.0" text="Remove" />
+      <ImageView fx:id="imageMessage" fitHeight="26.0" fitWidth="200.0" layoutX="271.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
